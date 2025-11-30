@@ -30,3 +30,49 @@ This is especially useful for anyone looking to learn or interview for full-stac
 
 ## 📁 Folder Structure (at root)
 
+/todo-fullstack-project
+├── FRONTEND/ ← contains UI code (HTML, CSS, JS/React)
+└── BACKEND/ ← contains Spring Boot backend
+
+
+---
+
+## 🧰 Getting Started / Installation
+
+### Prerequisites
+
+- Java 17 (or as configured), Maven  
+- MySQL (or equivalent relational DB) — configure DB credentials in `application.properties`  
+- Node.js (if frontend uses build tools) — otherwise a modern web browser is enough  
+- Git  
+
+### Steps
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/Kavishri21/todo-fullstack-project.git
+   cd todo-fullstack-project
+
+2. Backend setup
+
+cd BACKEND
+mvn clean install
+mvn spring-boot:run    # or run using your IDE
+
+
+3. Frontend setup
+
+cd ../FRONTEND
+# If plain HTML/CSS/JS → just open index.html in browser  
+# If using Node/React → run:
+npm install
+npm start
+
+
+4. Open the frontend in browser (e.g. http://localhost:3000 or index.html).
+
+5. Use the application: create, view, update, delete tasks.
+
+📝 License
+
+This project is MIT-licensed. Feel free to fork, improve, or learn from it.
